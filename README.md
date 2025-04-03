@@ -69,8 +69,9 @@ In docker/ folder rename env.example to .env
 
 ```
 LLM_MODEL=gemini-2.0-flash-exp
+GEMINI_API_KEY=<your API key>
 NUM_RESULTS=10
-DATABASES=db/threats.db:threats
+DATABASES=db/cve.db:containers,db/cve.db:windows,db/mitre.db:containers,db/mitre.db:windows
 EMBEDDING_MODEL=jina-embeddings-v2-small-en
 ```
 
